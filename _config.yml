@@ -1,44 +1,33 @@
-title: Your awesome title
-email: your-email@domain.com
-description: description
-baseurl: /Jekyll-Avalon
-url: http://joshuaavalon.github.io
-twitter_username: joshuaavalon
-github_username:  joshuaavalon
+# Site settings
+email: 
+baseurl: ""
+paginate: 5
+paginate_path: "/blog/page-:num"
+google_analytics: 
 
+# SEO settings
+title: Trophy
+description: 
+url: ""
+twitter_username: 
+default_img: 
+
+# Profile settings
+name: 
+profile_img: 
+profile: 
+social:
+  github: 
+
+# Build settings
+include: ["_categories"]
+exclude: ["_screenshots", "Gemfile", "Gemfile.lock"]
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Sass
 sass:
   style: compressed
 
-paginate: 12
-paginate_path: "/:num/"
-
-author_img_s: /img/author_s.png
-author_img: /img/author.png
-
-navigation:
-  - text: Home
-    url: /
-  - text: Categories
-    url: /categories.html
-  - text: Tags
-    url: /tags.html
-
-read_more: Read More
-env: production
-minify_html: false # Set to true only when it is production. Increase significant build time.
-
-# Build settings
-markdown: kramdown
-
-sticky: sticky # Tag used for sticky post
-sticky_count: 3 # Number of sticky post shown
-
-gems:
-  - jekyll-paginate
-  - jekyll-feed
-  
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE
+# Gems
+gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
